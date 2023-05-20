@@ -5,6 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="./style-pc.css">
 	<link rel="stylesheet" type="text/css" href="./style-ad.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style-pc-home.css">
+
+        <script type="text/javascript" src="./script.js"></script>
 </head>
 <body>
 	<section id="Home">
@@ -41,22 +43,25 @@
 		<label for="username">Location</label>
         <select class="custom-select valid" id="budget" id="password" name="Service" aria-invalid="false">
 <option selected="">Choose...</option>
-<option value="$1000 below">Mumbai</option>
-<option value="$2,000 - $5,000">Delhi</option>
-<option value="$5,000 - $15,000">Pune</option>
-<option value="$15,000 - $25,000">Kolkata</option>
-<option value="$25,000 >">Bangalore</option>
+<option onclick="filterSelection('mumbai')">Mumbai</option>
+<option onclick="filterSelection('delhi')">Delhi</option>
+<option onclick="filterSelection('pune')">Pune</option>
+<option onclick="filterSelection('kolkata')">Kolkata</option>
+<option onclick="filterSelection('bangalore')">Bangalore</option>
         </select>
 
 		<label for="username">Sport</label>
+<div id="myBtnContainer">
         <select class="custom-select valid" id="budget" id="password" name="Service" aria-invalid="false">
-<option selected="">Choose...</option>
-<option value="$1000 below">Athletics</option>
-<option value="$2,000 - $5,000">Soccer</option>
-<option value="$5,000 - $15,000">Cricket</option>
-<option value="$15,000 - $25,000">Basketball</option>
-<option value="$25,000 >">Marathon</option>
+<option onclick="filterSelection('all')">Choose...</option>
+<option onclick="filterSelection('athletics')">Athletics</option>
+<option onclick="filterSelection('soccer')">Soccer</option>
+<option onclick="filterSelection('cricket')">Cricket</option>
+<option onclick="filterSelection('colors')">Basketball</option>
+<option>Marathon</option>
         </select>
+</div>
+
 
         <label for="password">Budget</label>
         <select class="custom-select valid" id="budget" name="Budget" aria-invalid="false">
@@ -79,33 +84,43 @@
   </div>
 </div>
 
+
+
+
+
+
 	
-	<section id="Events">
-		<div class="row-row">
+	<section id="Events" class="container">
+
+		<div class="row-row filterDiv athletics">
 			<div class="one-of-three">
-				<h2></h2>
+				<h2>Mumbai District Meet</h2>
+                                
+
 			</div>
 			<div class="one-of-three">
 				<img src="">
 			</div>
 			<div class="one-of-three">
-				<p></p>
+				<p>Senior District Championship</p>
 			</div>
 		</div>
-		<div class="row-row">
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-		</div>
-		<div class="row-row">
-			<div class="one-of-three"></div>
+		<div class="row-row filterDiv soccer">
+			<div class="one-of-three"><h2>Football tournament</h2></div>
 			<div class="one-of-three"></div>
 			<div class="one-of-three"></div>
 		</div>
-		<div class="row-row">
+		<div class="row-row filterDiv cricket">
+			<div class="one-of-three"><h2>Chess Championship</h2></div>
 			<div class="one-of-three"></div>
+			<div class="one-of-three">
+                                 <p>Blitzz</p>
+                        </div>
+		</div>
+		<div class="row-row filterDiv athletics">
+			<div class="one-of-three"><h2>Somaiya Games</h2></div>
 			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
+			<div class="one-of-three">Athletic Event</div>
 		</div>
 		<div class="row-row">
 			<div class="one-of-three"></div>
