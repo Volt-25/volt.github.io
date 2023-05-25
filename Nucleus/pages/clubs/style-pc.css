@@ -48,6 +48,7 @@ body {
 
 
 #Events {
+  /*overflow-x: hidden;*/
 
 }
 
@@ -57,10 +58,60 @@ body {
 
 }
 
-.one-of-three {
+.three-three {
 	width: 33vw;
 	height: 75vh;
 	border: 1px solid black;
 	border-bottom-left-radius: 30px;
 	border-top-right-radius: 30px;
+}
+
+.one-of-three h2 {
+  font-size: 3vw;
+  top: 10vh;
+  position: relative;
+  text-align: center;
+}
+
+.one-of-three h3 {
+  font-size: 1.5vw;
+  top: 20vh;
+  position: relative;
+  text-align: center;
+}
+
+.two-of-three {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.two-of-three img {
+  width: 32vw;
+  height: 24vh;
+  align-content: center;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+}
+
+.three-of-three {
+  overflow-x: hidden;
+}
+
+.three-of-three h3 {
+  font-size: 2vw;
+  top: 10vh;
+  position: relative;
+  text-align: center;
+}
+
+.three-of-three p {
+  font-size: 1.5vw;
+  top: 20vh;
+  position: relative;
+  /*text-align: center;*/
+  left: 2vw;
+  margin-bottom: 1vh;
 }

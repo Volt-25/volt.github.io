@@ -44,33 +44,88 @@ body {
 
 }
 
-nav {
+.nav nav {
 	position: relative;
 	top: -5vh;
 }
 
-nav ul {
+.nav nav ul {
 	display: flex;
-	justify-content: right;
+	justify-content: center;
 	right: 2vw;
 	top: - 5vh;
 
 }
 
-nav ul li {
+.nav nav ul li {
 	list-style-type: none;
 }
 
-nav ul li a {
+.nav nav ul li a {
 	text-decoration: none;
 	color: white;
 	margin: 1vw;
 	font-size: 2vw;
 }
 
-nav ul li a:hover {
+.nav nav ul li a:hover {
 	color: gold;
 }
+
+.columns a {
+	border: 1px solid white;
+	border-radius: 50px;
+}
+.dropdown a {
+	border: none;
+}
+
+.columns {
+  display: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+}
+
+.columns:hover .dropdown {
+    display: block !important;
+}
+
+
+.nav2 nav {
+	position: fixed;
+	top: 3vh;
+	right: 0vw;
+	z-index: 5;
+}
+
+.nav2 nav ul {
+	/*display: flex;*/
+	/*justify-content: right;*/
+	text-align: right;
+	right: 2vw;
+	top: 0vh;
+}
+
+.nav2 nav ul li {
+	list-style-type: none;
+	/*text-align: center;*/
+}
+
+.nav2 nav ul li a {
+	text-decoration: none;
+	color: white;
+	margin: 1vw;
+	font-stretch: 2vw;
+	text-align: center;
+}
+
+.nav2 nav ul li a:hover {
+	color: gold;
+}
+
 
 .quote {
 	width: 40vw;
@@ -137,4 +192,35 @@ video {
 		font-stretch: expanded;
 
 
+}
+
+#About {
+
+
+}
+
+.our-story {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+
+}
+
+.our-vision {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+
+}
+
+.our-text {
+	font-size: 5vw;
+	color: wheat;
+	margin: 2vw;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.our-text span {
+	color: darkorange;
 }

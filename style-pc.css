@@ -6,7 +6,7 @@
 }
 
 #Home {
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	position: relative;
 }
 
@@ -36,11 +36,12 @@
 	font-family: sans-serif;
 	font-size: 6vw;
 	font-weight: 900;
+	
 
 
 }
 
-.quote-line-1 {
+.quote-line-1-1 {
 	border: 1px solid white;
 	border-radius: 100px;
 	padding-left: 2vw;
@@ -86,6 +87,7 @@ text-orientation: mixed;
 
 .hover-this {
   transition: all 0.3s ease;
+  padding: 10vw;
 }
 
 span {
@@ -132,3 +134,40 @@ span {
     display: inline-block;
   }
 }
+
+
+.quote-line-1:after{
+    content:'EXPLORE';
+}
+.quote-line-1:hover:after{
+    content:'PUSH';
+}
+
+.quote-line-2:after{
+    content:'THE';
+}
+.quote-line-2:hover:after{
+    content:'YOUR';
+}
+
+.quote-line-3:after{
+    content:'RACE';
+}
+.quote-line-3:hover:after{
+    content:'LIMITS';
+}
+
+.quote-line-4:after{
+    content:'WITHIN';
+}
+.quote-line-4:hover:after{
+    content:'EACH';
+}
+
+.quote-line-5:after{
+    content:'YOU';
+}
+.quote-line-5:hover:after{
+    content:'DAY';
+}
+
