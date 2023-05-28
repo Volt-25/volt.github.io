@@ -44,9 +44,17 @@ body {
 
 }
 
+.logo-link {
+	text-decoration: none;
+	color: white;
+	
+}
+
+
+
 .nav nav {
 	position: relative;
-	top: -5vh;
+	top: -4vh;
 }
 
 .nav nav ul {
@@ -67,21 +75,57 @@ body {
 	margin: 1vw;
 	font-size: 2vw;
 }
-
+/*
 .nav nav ul li a:hover {
 	color: gold;
+	text-decoration: underline red;
+
+}*/
+
+.nav-a {
+  position: relative;
+  /*display: block;*/
+  text-decoration: none;
+  font-family: "Lato";
+  /*font-size: 2rem;*/
+  color: #ecf0f1;
+  /*text-transform: uppercase;*/
+  /*padding: 4px 0;*/
+  transition: 0.5s;
+}
+.nav-a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #ff7000;
+  background: red;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.nav-a:hover {
+  color: #95a5a6;
+  /*color: gold;*/
+}
+.nav-a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .columns a {
 	border: 1px solid white;
 	border-radius: 50px;
+	padding: 5px 10px;
 }
 .dropdown a {
 	border: none;
 }
 
 .columns {
-  display: relative;
+	/*display: relative;*/
 }
 
 .dropdown {
@@ -89,14 +133,27 @@ body {
     position: absolute;
 }
 
-.columns:hover .dropdown {
-    display: block !important;
+.dropdown a {
+	margin-bottom: -2vh;
+	padding: -2vh;
 }
+
+.columns:hover .dropdown {
+    display: grid !important;
+}
+
+.nav-a-b:hover {
+	background-color: white;
+	color: black;
+	transition-duration: 0.5s;
+}
+
+
 
 
 .nav2 nav {
 	position: fixed;
-	top: 3vh;
+	top: 4vh;
 	right: 0vw;
 	z-index: 5;
 }
@@ -200,14 +257,14 @@ video {
 }
 
 .our-story {
-	display: flex;
+	display: grid;
 	align-items: center;
 	height: 100vh;
 
 }
 
 .our-vision {
-	display: flex;
+	display: grid;
 	align-items: center;
 	height: 100vh;
 
