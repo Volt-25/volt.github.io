@@ -252,8 +252,26 @@ video {
 }
 
 #About {
+	overflow-x: hidden;
 
+}
 
+#About h2 {
+	display: ;
+	/*align-items: left;?*/
+	position: relative;
+	font-size: 3vw;
+
+	left: 5vw;
+
+}
+
+#About h3 {
+	font-size: 2vw;
+	color: wheat;
+	margin: 2vw;
+	text-align: center;
+	font-family: sans-serif;
 }
 
 .our-story {
