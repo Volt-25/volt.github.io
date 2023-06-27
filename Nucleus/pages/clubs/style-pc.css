@@ -5,8 +5,31 @@
 }
 
 #filter-nav {
-	display: flex;
-	justify-content: right;
+  display: flex;
+  justify-content: right;
+  margin-right: 2vw;
+  margin-top: 2vh;
+  text-align: center;
+  position: relative;
+
+}
+
+#filter-nav label {
+  color: black;
+  font-size: 2vw;
+  font-family: serif;
+  font-weight: 300;
+  margin: 1vw;
+  margin-left: 2vw;
+}
+
+#filter-nav select {
+  /*background-color: blue;*/
+  height: 4vh;
+  width: 8vw;
+  /*top: 100%;*/
+  position: relative;
+  transform: translate(0, 60%);
 }
 
 

@@ -11,9 +11,6 @@ body {
 #Home {
 	/*position: relative;*/
 	overflow-x: hidden;
-	background-color: black;
-	color: white;
-	color: #f1f0ea;
 }
 
 .for-same-left-start {
@@ -47,7 +44,7 @@ body {
 
 .nav nav {
 	position: relative;
-	top: -5vh;
+	top: -4vh;
 }
 
 .nav nav ul {
@@ -76,13 +73,14 @@ body {
 .columns a {
 	border: 1px solid white;
 	border-radius: 50px;
+	padding: 5px 10px;
 }
 .dropdown a {
 	border: none;
 }
 
 .columns {
-  display: relative;
+	/*display: relative;*/
 }
 
 .dropdown {
@@ -90,8 +88,46 @@ body {
     position: absolute;
 }
 
+.dropdown a {
+	margin-bottom: -2vh;
+	padding: -2vh;
+}
+
 .columns:hover .dropdown {
-    display: block !important;
+    display: grid !important;
+}
+
+
+.nav2 nav {
+	position: fixed;
+	top: 4vh;
+	right: 0vw;
+	z-index: 5;
+}
+
+.nav2 nav ul {
+	/*display: flex;*/
+	/*justify-content: right;*/
+	text-align: right;
+	right: 2vw;
+	top: 0vh;
+}
+
+.nav2 nav ul li {
+	list-style-type: none;
+	/*text-align: center;*/
+}
+
+.nav2 nav ul li a {
+	text-decoration: none;
+	color: white;
+	margin: 1vw;
+	font-stretch: 2vw;
+	text-align: center;
+}
+
+.nav2 nav ul li a:hover {
+	color: gold;
 }
 
 

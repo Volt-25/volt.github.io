@@ -13,6 +13,9 @@ body {
 #Home {
 	/*position: relative;*/
 	overflow-x: hidden;
+	height: 100vh;
+	background-color: #f6f2ef;
+	color: darkred;
 }
 
 .for-same-left-start {
@@ -46,7 +49,7 @@ body {
 
 .logo-link {
 	text-decoration: none;
-	color: white;
+	color: darkred;
 	
 }
 
@@ -71,7 +74,7 @@ body {
 
 .nav nav ul li a {
 	text-decoration: none;
-	color: white;
+	color: darkred;
 	margin: 1vw;
 	font-size: 2vw;
 }
@@ -108,6 +111,7 @@ body {
 }
 .nav-a:hover {
   color: #95a5a6;
+  color: red;
   /*color: gold;*/
 }
 .nav-a:hover::after {
@@ -173,7 +177,7 @@ body {
 
 .nav2 nav ul li a {
 	text-decoration: none;
-	color: white;
+	color: red;
 	margin: 1vw;
 	font-stretch: 2vw;
 	text-align: center;
@@ -196,7 +200,7 @@ body {
 .quote span{
 	font-size: 4vw;
 	font-family: sans-serif;
-	font-weight: 600;
+	font-weight: 900;
 	text-transform: uppercase;
 	z-index: 10;
 	position: relative;
@@ -246,13 +250,14 @@ video {
 
 .volt-in-big-words h1 {
 	z-index: 5;
-		font-stretch: expanded;
+	font-stretch: expanded;
 
 
 }
 
 #About {
 	overflow-x: hidden;
+	background-color: darkred;
 
 }
 
@@ -298,4 +303,10 @@ video {
 
 .our-text span {
 	color: darkorange;
+}
+
+
+
+#Video {
+	overflow-x: hidden;
 }

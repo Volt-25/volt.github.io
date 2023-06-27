@@ -48,41 +48,7 @@
 
 
 	
-	<nav id="filter-nav">
-
-		<label for="username">Location</label>
-        <select class="custom-select valid" id="budget" id="password" name="Service" aria-invalid="false">
-<option selected="">Choose...</option>
-<option onclick="filterSelection('mumbai')">Mumbai</option>
-<option onclick="filterSelection('delhi')">Delhi</option>
-<option onclick="filterSelection('pune')">Pune</option>
-<option onclick="filterSelection('kolkata')">Kolkata</option>
-<option onclick="filterSelection('bangalore')">Bangalore</option>
-        </select>
-
-		<label for="username">Sport</label>
-<div id="myBtnContainer">
-        <select class="custom-select valid" id="budget" id="password" name="Service" aria-invalid="false">
-<option onclick="filterSelection('all')">Choose...</option>
-<option onclick="filterSelection('athletics')">Athletics</option>
-<option onclick="filterSelection('soccer')">Soccer</option>
-<option onclick="filterSelection('cricket')">Cricket</option>
-<option onclick="filterSelection('colors')">Basketball</option>
-<option>Marathon</option>
-        </select>
-</div>
-
-
-        <label for="password">Budget</label>
-        <select class="custom-select valid" id="budget" name="Budget" aria-invalid="false">
-<option selected="">Choose...</option>
-<option value="₹250 below">&lt; ₹250</option>
-<option value="₹250 - ₹500">₹250 - ₹500</option>
-<option value="₹500 - ₹1000">₹500 - ₹1000</option>
-<option value="₹1000 - ₹2000">₹1,000 - ₹2,000</option>
-<option value="₹2000 >">₹2,000 &gt;</option>
-        </select>
-	</nav>
+	
 
 
 
@@ -95,7 +61,44 @@
 </div>
 
 
+<nav id="filter-nav">
 
+		<label for="username">Location</label>
+        <select class="custom-select valid" id="budget" id="password" name="Service" aria-invalid="false">
+<option selected="">Choose...</option>
+<option onclick="filterSelection('mumbai')">Mumbai</option>
+<option onclick="filterSelection('delhi')">Delhi</option>
+<option onclick="filterSelection('pune')">Pune</option>
+<option onclick="filterSelection('kolkata')">Kolkata</option>
+<option onclick="filterSelection('bangalore')">Bangalore</option>
+        </select>
+
+
+
+		<label for="username">Sport</label>
+        <select class="custom-select valid" id="budget" id="password" name="Service" aria-invalid="false">
+<option onclick="filterSelection('all')">Choose...</option>
+<option onclick="filterSelection('athletics')">Athletics</option>
+<option onclick="filterSelection('soccer')">Soccer</option>
+<option onclick="filterSelection('cricket')">Cricket</option>
+<option onclick="filterSelection('colors')">Basketball</option>
+<option>Marathon</option>
+        </select>
+
+
+
+        <label for="password">Budget</label>
+        <select class="custom-select valid" id="budget" name="Budget" aria-invalid="false">
+<option selected="">Choose...</option>
+<option value="₹100 below">&lt; ₹100</option>
+<option value="₹100 - ₹200">₹100 - ₹200</option>
+<option value="₹200 - ₹300">₹200 - ₹300</option>
+<option value="₹300 - ₹500">₹300 - ₹500</option>
+<option value="₹500 >">₹500 &gt;</option>
+        </select>
+
+        
+	</nav>
 
 
 
@@ -171,6 +174,51 @@
 			<div class="one-of-three"></div>
 		</div>
 	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+//Successfull
+
+
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+window.onload = getLocation();
+
+
+</script>
+
+<p id="demo" style="height: 100vh;"></p>
 
 </body>
 </html>
