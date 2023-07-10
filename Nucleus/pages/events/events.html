@@ -63,49 +63,57 @@
 
 <nav id="filter-nav">
 
-		<label for="username">Location</label>
-        <select class="custom-select valid" id="budget" id="password" name="Service" aria-invalid="false">
-<option selected="">Choose...</option>
-<option onclick="filterSelection('mumbai')">Mumbai</option>
-<option onclick="filterSelection('delhi')">Delhi</option>
-<option onclick="filterSelection('pune')">Pune</option>
-<option onclick="filterSelection('kolkata')">Kolkata</option>
-<option onclick="filterSelection('bangalore')">Bangalore</option>
-        </select>
+		<label for="location">Location:</label>
+    <select id="location">
+      <option value="">All</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Pune">Pune</option>
+      <option value="Bangalore">Bangalore</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Kolkata">Kolkata</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Hyderabad">Hyderabad</option>
+    </select>
 
+    <label for="sport">Sport:</label>
+    <select id="sport">
+      <option value="">All</option>
+      <option value="Athletics">Athletics</option>
+      <option value="Football">Football</option>
+      <option value="Basketball">Basketball</option>
+      <option value="Chess">Chess</option>
+      <option value="Marathon">Marathon</option>
+      <option value="Wrestling">Wrestling</option>
+      <option value="Weightlifting">Weightlifting</option>
+      <option value="Cricket">Cricket</option>
+    </select>
 
-
-		<label for="username">Sport</label>
-        <select class="custom-select valid" id="budget" id="password" name="Service" aria-invalid="false">
-<option onclick="filterSelection('all')">Choose...</option>
-<option onclick="filterSelection('athletics')">Athletics</option>
-<option onclick="filterSelection('soccer')">Soccer</option>
-<option onclick="filterSelection('cricket')">Cricket</option>
-<option onclick="filterSelection('colors')">Basketball</option>
-<option>Marathon</option>
-        </select>
-
-
-
-        <label for="password">Budget</label>
-        <select class="custom-select valid" id="budget" name="Budget" aria-invalid="false">
-<option selected="">Choose...</option>
-<option value="₹100 below">&lt; ₹100</option>
-<option value="₹100 - ₹200">₹100 - ₹200</option>
-<option value="₹200 - ₹300">₹200 - ₹300</option>
-<option value="₹300 - ₹500">₹300 - ₹500</option>
-<option value="₹500 >">₹500 &gt;</option>
-        </select>
+    <label for="budget">Budget:</label>
+    <select id="budget">
+      <option value="">All</option>
+      <option value="below_100">Below 100</option>
+      <option value="100_200">100-200</option>
+      <option value="200_300">200-300</option>
+      <option value="300_500">300-500</option>
+      <option value="500_above">500 and above</option>
+    </select>
 
         
 	</nav>
 
 
-
+	<div id="events-container">
+    <!-- Event divs with information -->
+    
+    
+    <!-- Add more event divs as needed -->
+  </div>
 	
 	<section id="Events" class="container">
+		
 
-		<div class="row-row">
+	<div class="event" data-location="Mumbai" data-sport="Athletics" data-budget="below_100">
+      <div class="row-row">
 			<div class="three-three one-of-three">
 				<h2>IIT Bombay Aavhan</h2>
 				<h3>Aavhan is a all sport fest of IIT Bombay</h3>
@@ -121,58 +129,75 @@
 				<p><span>Address: </span>Athletics Ground, IIT Bombay</p>
 			</div>
 		</div>
+    </div>
 
-		<div class="row-row">
+    <div class="event" data-location="Pune" data-sport="Football" data-budget="300_500">
+      <div class="row-row">
 			<div class="three-three one-of-three">
-				<h2>IIT Bombay Aavhan</h2>
-				<h3>Aavhan is a all sport fest of IIT Bombay</h3>
+				<h2>Pune Football State Championship</h2>
+				<h3>Event for all football enthusiasts</h3>
 			</div>
 			<div class="three-three two-of-three">
 				<img src="./run1.jpg"><img src="./run2.jpg"><img src="./run3.jpg">
 			</div>
 			<div class="three-three three-of-three">
-				<h3>IIT Bombay Aavhan</h3>
+				<h3>PFSC</h3>
 				<p><span>Organizer: </span>XYZ</p>
 				<p><span>Cost: </span>200/event</p>
 				<p><span>Date: </span>16 - 20 May, 2023</p>
-				<p><span>Address: </span>Athletics Ground, IIT Bombay</p>
+				<p><span>Address: </span>Athletics Ground, IIIT Pune</p>
 			</div>
 		</div>
-		<div class="row-row">
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
+    </div>
+
+    <div class="event" data-location="Bangalore" data-sport="Cricket" data-budget="100_200">
+      <div class="row-row">
+			<div class="three-three one-of-three">
+				<h2>Tower Cricket Match</h2>
+				<h3>Tower is an unauthorized place where we will conduct our official cricket match</h3>
+			</div>
+			<div class="three-three two-of-three">
+				<img src="./run1.jpg"><img src="./run2.jpg"><img src="./run3.jpg">
+			</div>
+			<div class="three-three three-of-three">
+				<h3>Papu Don</h3>
+				<p><span>Organizer: </span>XYZ</p>
+				<p><span>Cost: </span>200/event</p>
+				<p><span>Date: </span>16 - 20 May, 2023</p>
+				<p><span>Address: </span>Tower, IT Market</p>
+			</div>
 		</div>
-		<div class="row-row">
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
+    </div>
+
+    <div class="event" data-location="Kolkata" data-sport="Marathon" data-budget="200_300">
+      <div class="row-row">
+			<div class="three-three one-of-three">
+				<h2>Bengal Marathon</h2>
+				<h3>Loose about 5Kg weight in this run with us</h3>
+			</div>
+			<div class="three-three two-of-three">
+				<img src="./run1.jpg"><img src="./run2.jpg"><img src="./run3.jpg">
+			</div>
+			<div class="three-three three-of-three">
+				<h3>Kolkata Runners Association</h3>
+				<p><span>Organizer: </span>XYZ</p>
+				<p><span>Cost: </span>200/event</p>
+				<p><span>Date: </span>16 - 20 May, 2023</p>
+				<p><span>Address: </span>Machi Market, Kolkata</p>
+			</div>
 		</div>
-		<div class="row-row">
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-		</div>
-		<div class="row-row">
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-		</div>
-		<div class="row-row">
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-		</div>
-		<div class="row-row">
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-		</div>
-		<div class="row-row">
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-			<div class="one-of-three"></div>
-		</div>
+    </div>
+
+
+
+
+
+
+
+		
+
+		
+		
 	</section>
 
 
@@ -193,9 +218,60 @@
 
 
 
+
+
+<script>
+    const locationFilter = document.getElementById('location');
+    const sportFilter = document.getElementById('sport');
+    const budgetFilter = document.getElementById('budget');
+    const eventsContainer = document.getElementById('Events');
+
+    locationFilter.addEventListener('change', filterEvents);
+    sportFilter.addEventListener('change', filterEvents);
+    budgetFilter.addEventListener('change', filterEvents);
+
+    function filterEvents() {
+      const selectedLocation = locationFilter.value;
+      const selectedSport = sportFilter.value;
+      const selectedBudget = budgetFilter.value;
+
+      const events = document.getElementsByClassName('event');
+      for (let i = 0; i < events.length; i++) {
+        const event = events[i];
+        const location = event.getAttribute('data-location');
+        const sport = event.getAttribute('data-sport');
+        const budget = event.getAttribute('data-budget');
+
+        const locationMatch = selectedLocation === '' || selectedLocation === location;
+        const sportMatch = selectedSport === '' || selectedSport === sport;
+        const budgetMatch = selectedBudget === '' || selectedBudget === budget;
+
+        if (locationMatch && sportMatch && budgetMatch) {
+          event.style.display = 'block';
+        } else {
+          event.style.display = 'none';
+        }
+      }
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
 
-//Successfull
+//Location Access
 
 
 var x = document.getElementById("demo");
@@ -218,7 +294,7 @@ window.onload = getLocation();
 
 </script>
 
-<p id="demo" style="height: 100vh;"></p>
+<p id="demo"></p>
 
 </body>
 </html>

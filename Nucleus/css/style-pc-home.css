@@ -21,8 +21,9 @@ body {
 
 .logo {
 	display: flex;
-	position: relative;
+	position: fixed;
 	top: 3vh;
+	z-index: 10;
 
 }
 
@@ -52,7 +53,8 @@ body {
 
 .nav nav {
 	position: relative;
-	top: -4vh;
+	top: 4vh;
+	z-index: 5;
 }
 
 .nav nav ul {
@@ -176,7 +178,7 @@ body {
 }
 
 .quote {
-	width: 40vw;
+	width: 45vw;
 	text-align: left;
 	margin-left: 2vw;
 	margin-right: 2vw;
