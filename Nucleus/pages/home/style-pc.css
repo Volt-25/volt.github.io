@@ -46,6 +46,7 @@ body {
 	top: 50%;
 	transform: translate(0, -50%);
 	left: 8vw;
+	color: gold;
 
 }
 
@@ -268,7 +269,7 @@ video {
 }
 
 #About h2 {
-	display: ;
+	/* display: ; */
 	/*align-items: left;?*/
 	position: relative;
 	font-size: 3vw;
