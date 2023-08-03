@@ -37,8 +37,8 @@ a {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #7700ff;
+	background-color: #7700ff;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -87,10 +87,11 @@ input {
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
-	width: 768px;
+	width: 100vw;
+	height: 100vh;
 	max-width: 100%;
 	min-height: 480px;
-	top: 15vh;
+	/* top: 15vh; */
 }
 
 .form-container {
@@ -144,7 +145,7 @@ input {
 	height: 100%;
 	overflow: hidden;
 	transition: transform 0.6s ease-in-out;
-	z-index: 100;
+	z-index: 8;
 }
 
 .container.right-panel-active .overlay-container{
@@ -153,8 +154,8 @@ input {
 
 .overlay {
 	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: -webkit-linear-gradient(to right, #7700ff, #ff0000);
+	background: linear-gradient(to right, #7700ff, #ff0000);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
