@@ -1,1 +1,1 @@
-Full Website Releasin Soon, till then keeping the code Private;
+Full Website Releasing Soon, till then keeping the code Private;
