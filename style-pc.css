@@ -1,13 +1,15 @@
 * {
 	margin: 0;
 	padding: 0;
-	background-color: black;
+	/* background-color: black; */
 	cursor: none;
 }
 
 #Home {
 	/*overflow-x: hidden;*/
 	position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 
 .logo img {
@@ -16,14 +18,35 @@
 	text-shadow: 0 20px 40px rgba(0,0,0,.5);
 	width: 10vw;
 	left: 1vw;
-	top: -0vh;
+	top: 3vh;
+}
+
+
+.videooo {
+	display: flex;
+	justify-content: center;
+	/*overflow-x: hidden;*/
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+  filter: brightness(10%);
+}
+
+video {
+	position: absolute;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
 }
 
 .quote {
 	position: fixed;
 	left: 50%;
 	top: 50%;
-    transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 	
 
 	
@@ -65,23 +88,46 @@
 }
 
 .social {
-	position: absolute;
-	bottom: 5vh;
-	left: 5vw;
+	position: fixed;
+  left: 5vw;
+  top: 67vh;
+	
 }
+
+.social ul {
+  text-decoration: none;
+}
+
+.social ul li {
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+.social ul li a img {
+  text-decoration: none;
+  width: 2vw;
+  margin-bottom: 3vh;
+}
+
+
+
+
+
+
+
+
+
 
 .sound {
-position: absolute;
-
+position: fixed;
+left: 95vw;
+top: 75vh;
 writing-mode: vertical-rl;
 text-orientation: mixed;
+color: rgb(161, 161, 161);
+font-size: 3vh;
 }
-
-
-
-
-
-
 
 
 
@@ -90,16 +136,21 @@ text-orientation: mixed;
   padding: 10vw;
 }
 
-span {
+.sound span {
   display: inline-block;
   font-family: 'Russo One', sans-serif;
   font-weight: 400;
-  color: #fff;
-  font-size: 36px;
+  color: #a5a5a5;
+  font-size: 3vh;
   text-transform: uppercase;
   pointer-event: none;
   transition: transform 0.1s linear;
 }
+
+
+
+
+
 
 .cursor {
   pointer-events: none;

@@ -7,23 +7,30 @@ body {
 	/*background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;*/
 	/**/
 }
-
 #Home {
-	/*position: relative;*/
+	position: relative;
 	overflow-x: hidden;
+	height: 100vh;
+	color: #f6f2ef;
 	background-color: black;
-	color: white;
 }
 
 .for-same-left-start {
 	
 }
 
+
+.logo-link {
+	position: absolute;
+	left: 2vw;
+}
+
 .logo {
 	display: flex;
-	position: fixed;
-	top: 3vh;
+	/*position: absolute;*/
+	/*top: 4vh;*/
 	z-index: 10;
+	left: 0vw;
 
 }
 
@@ -48,21 +55,24 @@ body {
 
 .logo-link {
 	text-decoration: none;
-	color: white;
-
+	color: #f6f2ef;
+	
 }
+
+
 
 .nav nav {
 	position: relative;
-	top: 4vh;
+	top: 3vh;
 	z-index: 5;
 }
 
 .nav nav ul {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	right: 2vw;
-	top: - 5vh;
+	/*top: - 5vh;*/
 
 }
 
@@ -72,10 +82,21 @@ body {
 
 .nav nav ul li a {
 	text-decoration: none;
-	color: white;
+	color: #f6f2ef;
 	margin: 1vw;
 	font-size: 2vw;
 }
+
+.joiiin {
+	position: absolute;
+	right: 3vw;
+}
+/*
+.nav nav ul li a:hover {
+	color: gold;
+	text-decoration: underline red;
+
+}*/
 
 .nav-a {
   position: relative;
@@ -96,14 +117,16 @@ body {
   top: 100%;
   left: 0;
   background: #ff7000;
-  background: red;
+  background: white;
+  /*background: red;*/
   transition: transform 0.5s;
   transform: scaleX(0);
   transform-origin: right;
 }
 .nav-a:hover {
   color: #95a5a6;
-  /*color: gold;*/
+  color: red;
+  color: gold;
 }
 .nav-a:hover::after {
   transform: scaleX(1);
@@ -168,29 +191,80 @@ body {
 
 .nav2 nav ul li a {
 	text-decoration: none;
-	color: white;
+	color: gold;
 	margin: 1vw;
 	font-stretch: 2vw;
 	text-align: center;
 }
 
 .nav2 nav ul li a:hover {
-	color: gold;
+	color: #f6f2ef;
+}
+
+.h1 {
+	position: absolute;
+	width: 93.5vw;
+	border-top: 0.1px solid #f6f2ef;
+	top: 10.5vh;
+	left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.v1 {
+	position: absolute;
+	height: 100vh;
+	border-left: 0.1px solid #f6f2ef;
+	left: 2.5vw;
+
+	top: 0vh;
+
+}
+
+.v2 {
+	position: absolute;
+	height: 100vh;
+	border-left: 0.1px solid #f6f2ef;
+	right: 2.5vw;
+	top: 0vh;
+}
+
+.h2 {
+	position: absolute;
+	width: 80vw;
+	border-top: 0.1px solid #f6f2ef;
+	top: 15vh;
+	left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.h3 {
+	position: absolute;
+	width: 20vw;
+	border-top: 0.1px solid #f6f2ef;
+	top: 17vh;
+	left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .quote {
-	width: 45vw;
+	width: 50vw;
 	text-align: left;
-	margin-left: 2vw;
+	margin-left: 4vw;
 	margin-right: 2vw;
-	margin-top: 15vh;
+	margin-top: 10vh;
 	margin-bottom: -15vh;
 }
 
 .quote span{
 	font-size: 4vw;
 	font-family: sans-serif;
-	font-weight: 600;
+	font-weight: 900;
 	text-transform: uppercase;
 	z-index: 10;
 	position: relative;
@@ -203,7 +277,10 @@ body {
 	/*overflow-x: hidden;*/
 	width: 100vw;
 	height: 100vh;
-	position: relative;
+	position: absolute;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+    filter: brightness(20%);
 }
 
 video {
@@ -215,7 +292,7 @@ video {
 }
 
 .volt-in-big-words {
-	font-size: 35vh;
+	font-size: 25vw;
 	font-weight: 900;
 	font-family: "Staff XX Condensed";
 	font-family: sans-serif;

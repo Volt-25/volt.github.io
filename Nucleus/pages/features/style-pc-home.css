@@ -13,9 +13,10 @@ body {
 }
 
 #Home {
-	/*position: relative;*/
-	/* overflow-x: hidden; */
+	position: relative;
+	overflow-x: hidden;
 	height: 100vh;
+	color: #f6f2ef;
 	background-color: black;
 }
 
@@ -23,11 +24,18 @@ body {
 	
 }
 
+
+.logo-link {
+	position: absolute;
+	left: 2vw;
+}
+
 .logo {
 	display: flex;
-	position: fixed;
-	top: 3vh;
+	/*position: absolute;*/
+	/*top: 4vh;*/
 	z-index: 10;
+	left: 0vw;
 
 }
 
@@ -52,21 +60,24 @@ body {
 
 .logo-link {
 	text-decoration: none;
-	color: white;
-
+	color: #f6f2ef;
+	
 }
+
+
 
 .nav nav {
 	position: relative;
-	top: 4vh;
+	top: 3vh;
 	z-index: 5;
 }
 
 .nav nav ul {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	right: 2vw;
-	top: - 5vh;
+	/*top: - 5vh;*/
 
 }
 
@@ -76,9 +87,14 @@ body {
 
 .nav nav ul li a {
 	text-decoration: none;
-	color: white;
+	color: #f6f2ef;
 	margin: 1vw;
 	font-size: 2vw;
+}
+
+.joiiin {
+	position: absolute;
+	right: 3vw;
 }
 
 .nav-a {
@@ -181,6 +197,35 @@ body {
 	color: gold;
 }
 
+.h1 {
+	position: absolute;
+	width: 93.5vw;
+	border-top: 0.1px solid #f6f2ef;
+	top: 10.5vh;
+	left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.v1 {
+	position: absolute;
+	height: 100vh;
+	border-left: 0.1px solid #f6f2ef;
+	left: 2.5vw;
+
+	top: 0vh;
+
+}
+
+.v2 {
+	position: absolute;
+	height: 100vh;
+	border-left: 0.1px solid #f6f2ef;
+	right: 2.5vw;
+	top: 0vh;
+}
+
 
 .features-home {
 	width: 50vw;
@@ -191,7 +236,7 @@ body {
 
 .features-home div {
 	top: 8vh;
-	margin-left: 3vw;
+	margin-left: 5vw;
 	/* text-align: center; */
 	font-size: 8vw;
 	-webkit-background-clip: text;

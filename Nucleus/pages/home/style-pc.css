@@ -9,6 +9,31 @@ body {
 	color: white;
 	color: #f1f0ea;
 	background: #f6f2ef;
+	overflow-x: hidden;
+}
+
+#warning {
+	width: 100vw;
+	background-color: green;
+	color: white;
+	text-align: center;
+	height: 4vh;
+}
+#warning div {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	/*align-items: center;*/
+}
+#warning div p {
+	position: absolute;
+	left: 20vw;
+	font-size: 1.5vw;
+	
+}
+#warning div button {
+	position: absolute;
+	right: 4vw;
 }
 
 #Home {
@@ -23,11 +48,18 @@ body {
 	
 }
 
+
+.logo-link {
+	position: absolute;
+	left: 2vw;
+}
+
 .logo {
 	display: flex;
-	position: fixed;
-	top: 3vh;
+	/*position: absolute;*/
+	/*top: 4vh;*/
 	z-index: 10;
+	left: 0vw;
 
 }
 
@@ -60,15 +92,16 @@ body {
 
 .nav nav {
 	position: relative;
-	top: 4vh;
+	top: 3vh;
 	z-index: 5;
 }
 
 .nav nav ul {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	right: 2vw;
-	top: - 5vh;
+	/*top: - 5vh;*/
 
 }
 
@@ -81,6 +114,11 @@ body {
 	color: #f6f2ef;
 	margin: 1vw;
 	font-size: 2vw;
+}
+
+.joiiin {
+	position: absolute;
+	right: 3vw;
 }
 /*
 .nav nav ul li a:hover {
@@ -192,11 +230,71 @@ body {
 	color: #f6f2ef;
 }
 
+.h1 {
+	position: absolute;
+	width: 93.5vw;
+	border-top: 0.1px solid #f6f2ef;
+	top: 10.5vh;
+	left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.v1 {
+	position: absolute;
+	height: 100vh;
+	border-left: 0.1px solid #f6f2ef;
+	left: 2.5vw;
+
+	top: 0vh;
+
+}
+
+.v2 {
+	position: absolute;
+	height: 100vh;
+	border-left: 0.1px solid #f6f2ef;
+	right: 2.5vw;
+	top: 0vh;
+}
+
+.h2 {
+	position: absolute;
+	width: 80vw;
+	border-top: 0.1px solid #f6f2ef;
+	top: 15vh;
+	left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.h3 {
+	position: absolute;
+	width: 20vw;
+	border-top: 0.1px solid #f6f2ef;
+	top: 17vh;
+	left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
 
 .quote {
 	width: 45vw;
 	text-align: left;
-	margin-left: 2vw;
+	margin-left: 5vw;
 	margin-right: 2vw;
 	margin-top: 10vh;
 	margin-bottom: -15vh;
@@ -262,11 +360,113 @@ video {
 
 }
 
+
+
+
+
 #About {
 	overflow-x: hidden;
-	background-color: #f6f2ef;
+	background-color: darkred;
+	position: relative;
+	height: 200vh;
 
 }
+
+.about-box {
+	background-color: black;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	height: 150vh;
+	width: 95vw;
+	border-top-left-radius: 5vw;
+	border-top-right-radius: 5vw;
+	top: 10vh;
+
+
+}
+
+.about-box h2 {
+	color: white;
+	font-size: 5vw;
+	top: 5vh;
+	left: 2.5vw;
+}
+
+.about-sets {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 10vh;
+
+}
+
+.about-set-1 {
+	height: 100vh;
+	width: 30vw;
+	background: #303030;
+	margin-left: 10vh;
+	border-radius: 2vw;
+	position: relative;
+}
+.about-set-2 {
+	height: 100vh;
+	width: 30vw;
+	/*margin: 5vh;*/
+	margin-left: 1vw;
+	margin-right: 1vw;
+	background: #6e00ff;
+	border-radius: 2vw;
+	position: relative;
+}
+.about-set-3 {
+	height: 100vh;
+	width: 30vw;
+	margin-right: 10vh;
+	background: #303030;
+	border-radius: 2vw;
+	position: relative;
+	color: white !important;
+}
+
+.about-box div div h3 {
+	color: #c0ff00;
+	/*text-align: left;*/
+	font-size: 4vw;
+	left: 1vw;
+	margin: 2vw;
+}
+
+.about-box div div h4 {
+	color: white;
+	margin: 1vw;
+	left: 1vw;
+}
+
+.about-sets div div {
+	display: flex;
+	align-items: center;
+
+}
+
+.about-sets div div img {
+	width: 100px;
+	height: 100px;
+}
+
+.about-sets div p {
+	margin: 2vw;
+	font-size: 1.5vw;
+}
+
+
+
+
+
+
+
 
 #About h2 {
 	/* display: ; */
@@ -279,12 +479,8 @@ video {
 }
 
 #About h3 {
-	font-size: 2vw;
-	color: wheat;
-	color: black;
-	margin: 2vw;
-	text-align: center;
-	font-family: sans-serif;
+	
+	/*font-family: sans-serif;*/
 }
 
 .our-story {
@@ -343,14 +539,16 @@ video {
 	background-color: #f6f2ef;
 	display: flex;
 	justify-content: center;
+	margin: 0;
+	padding: 0;
 }
 
 .footer-box {
 	border: 1px solid black;
-	border-top-right-radius: 100px;
-	border-bottom-left-radius: 100px;
 	height: 50vh;
 	width: 98vw;
 	text-align: center;
-	background-color: #520092;
+	background-color: green;
+	margin: 0;
+	padding: 0;
 }
