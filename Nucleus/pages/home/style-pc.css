@@ -42,6 +42,7 @@ body {
 	height: 100vh;
 	color: #f6f2ef;
 	background-color: darkred;
+	/*background: black;*/
 }
 
 .for-same-left-start {
@@ -364,6 +365,106 @@ video {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Main {
+	/*height: 100vh;*/
+	min-height: 82.4479166667vw;
+	background: black;
+	/*background: darkred;*/
+	/*display: flex;
+	justify-content: center;*/
+	position: relative;
+	top: 0;
+}
+
+.noise-bg {
+	background: url(https://babs.xyz/wp-content/themes/bamboo/assets/img/bg/noise-pattern.webp) repeat 50%;
+	content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    mix-blend-mode: screen;
+    opacity: .05;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+}
+
+.grid-bg {
+	background-image: repeating-linear-gradient(0deg,transparent,transparent 7.8645833333vw,#d1cfda 7.8645833333vw,#d1cfda 7.96875vw),repeating-linear-gradient(-90deg,transparent,transparent 7.8645833333vw,#d1cfda 7.8645833333vw,#d1cfda 7.96875vw);
+    background-size: 7.96875vw 7.96875vw;
+    height: 71.8229166667vw;
+    left: 50%;
+    opacity: .1;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 87.7604166667vw;
+}
+
+.about-text {
+	left: 5vw;
+	padding-top: 10vh;
+	position: relative;
+	width: 60vw;
+}
+
+.about-text div {
+	font-size: 1.5vw;
+	margin: 2vw;
+}
+
+.about-text p {
+	font-size: 3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #About {
 	overflow-x: hidden;
 	background-color: darkred;
@@ -519,7 +620,20 @@ video {
 
 
 
+#marquee {
+	background: black;
+	overflow-x: auto;
 
+}
+
+#marquee div {
+	color: white;
+	font-size: 8vw;
+}
+
+#marquee div span {
+	color: gold;
+}
 
 
 
@@ -532,23 +646,63 @@ video {
 
 
 #Contact{
+	height: 90vh;
+	background-color: black;
 
 }
 
-#Footer{
+.hc {
+	border-bottom: 1px solid white;
+	width: 96vw;
+
+}
+
+.main-contact {
+	height: 70vh;
+}
+
+#Footer {
+	height: 20vh;
+	position: relative;
+	bottom: 0vh;
 	background-color: #f6f2ef;
+	background-color: black;
 	display: flex;
 	justify-content: center;
 	margin: 0;
 	padding: 0;
 }
 
-.footer-box {
-	border: 1px solid black;
-	height: 50vh;
-	width: 98vw;
-	text-align: center;
-	background-color: green;
-	margin: 0;
-	padding: 0;
+#Footer div {
+	font-size: 1.3vw;
+	margin: 1vw;
+}
+
+.footer-logo {
+	position: absolute;
+	left: 2vw;
+	font-size: 5vw;
+	color: gold;
+	font-weight: 900;
+	width: 5vw;
+}
+
+.address {
+	position: absolute;
+	left: 25vw;
+}
+
+.policy {
+	position: absolute;
+	right: 20vw;
+}
+
+.copywrite {
+	position: absolute;
+	right: 3vw;
+}
+
+.copywrite a {
+	color: white;
+	text-decoration: none;
 }
