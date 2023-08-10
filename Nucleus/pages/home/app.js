@@ -42,17 +42,55 @@ tl
 	})
 
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.from(".about-text-p", {
+// 	delay: 1,
+// 	y: 100,
+// 	opacity: 0,
+// 	scrollTrigger: {
+// 		trigger: ".about-text-p",
+// 		markers: true,
+// 		start: "top 80%",
+// 		end: "center 10%",
+// 		scrub: 3
 
-gsap.to(".about-text-p", {
-	duration: 3,
-	ScrollTrigger: function(){
-			$('.quote').textillate({
-				in: { effect: 'fadeInUp'}
-			})
+
+// 	}
+// })
+
+gsap.to(".v1", {
+	opacity: 0,
+	scrollTrigger: {
+		trigger: "#Main",
+		// markers: true,
+		start: "top 100%",
+		end: "top 0%",
+		scrub: 2
+	},
+	css: { height: 0 }
+})
+gsap.to(".v2", {
+	opacity: 0,
+	scrollTrigger: {
+		trigger: "#Main",
+		// markers: true,
+		start: "top 100%",
+		end: "top 0%",
+		scrub: 2
+	},
+	css: { height: 0 }
+})
+gsap.to(".h1", {
+	// x: 1000,
+	opacity: 0,
+	duration: 1,
+	scrollTrigger: {
+		trigger: "#Main",
+		markers: true,
+		start: "top 90%",
+		end: "top 0%",
+		scrub: 3
 	}
-	markers: true,
-	start: "top 6%",
-	end: "top 1%"
-});
+})
+
+
 

@@ -42,6 +42,7 @@ body {
 	height: 100vh;
 	color: #f6f2ef;
 	background-color: darkred;
+	background: linear-gradient(180deg, darkred, black);
 	/*background: black;*/
 }
 
@@ -51,7 +52,7 @@ body {
 
 
 .logo-link {
-	position: absolute;
+	/*position: absolute;*/
 	left: 2vw;
 }
 
@@ -118,7 +119,7 @@ body {
 }
 
 .joiiin {
-	position: absolute;
+	/*position: absolute;*/
 	right: 3vw;
 }
 /*
@@ -196,6 +197,23 @@ body {
 	transition-duration: 0.5s;
 }
 
+.nav {
+	position: relative;
+
+
+}
+
+.nav nav {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100vw;
+}
+
+
+
+
+
 
 
 
@@ -232,7 +250,7 @@ body {
 }
 
 .h1 {
-	position: absolute;
+	position: fixed;
 	width: 93.5vw;
 	border-top: 0.1px solid #f6f2ef;
 	top: 10.5vh;
@@ -243,7 +261,7 @@ body {
 }
 
 .v1 {
-	position: absolute;
+	position: fixed;
 	height: 100vh;
 	border-left: 0.1px solid #f6f2ef;
 	left: 2.5vw;
@@ -253,7 +271,7 @@ body {
 }
 
 .v2 {
-	position: absolute;
+	position: fixed;
 	height: 100vh;
 	border-left: 0.1px solid #f6f2ef;
 	right: 2.5vw;
@@ -432,6 +450,7 @@ video {
 
 .about-text p {
 	font-size: 3vw;
+	font-family: sans-serif;
 }
 
 
