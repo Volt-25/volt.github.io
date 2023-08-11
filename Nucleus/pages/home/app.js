@@ -250,11 +250,14 @@ gsap.from('.training', {
   },
 });
 gsap.from('.social', {
-  duration: 0.2,
+  duration: 0,
   opacity: 0,
+  // x: 1000,
+  // rotate: 360,
   scrollTrigger: {
     trigger: '.social',
     // scroller: '#bg',
+    // scroller: body,
     scrub: true,
     end: 'top 40%',
     // markers:true,
